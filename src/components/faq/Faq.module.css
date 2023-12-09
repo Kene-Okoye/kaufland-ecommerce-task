@@ -1,0 +1,171 @@
+.faq__heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-inline: clamp(0.5rem, -1.94rem + 12.22vw, 6rem);
+  margin-block-end: var(--spacing-lg);
+}
+
+.kaufland-ecommerce-logo-wrapper {
+  height: 50px;
+  margin-inline-end: 2rem;
+}
+
+.faq__heading-wrapper {
+  margin-block-start: var(--spacing-md);
+}
+
+.faq__section-header:after {
+  content: '';
+  position: absolute;
+  width: 4rem;
+  left: 50%;
+  margin-block-start: 3rem;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-bottom: 0.15rem solid var(--color-kaufland-red);
+}
+
+.faq__list {
+  list-style: none;
+  padding: 0;
+}
+
+.faq__list {
+  padding-block-start: var(--spacing-lg);
+}
+
+.faq__list h2 {
+  padding-block-end: var(--spacing-lg);
+}
+
+.faq__button {
+  text-transform: uppercase;
+  background-color: var(--color-grey-darker);
+  border: 1px solid var(--color-grey-darker);
+  color: #ffff;
+  font-weight: var(--font-weight-semi-bold);
+  padding-block: var(--spacing-xs);
+  padding-inline: var(--spacing-md);
+  margin-block: var(--spacing-lg);
+}
+
+.faq__button:hover {
+  background-color: var(--color-grey-dark);
+  border-color: var(--color-grey-dark);
+}
+
+.faq__button:focus {
+  border: 3px solid var(--color-grey-light);
+}
+
+.faq__button:disabled {
+  cursor: not-allowed;
+}
+
+.faq__button:disabled,
+.faq__button:disabled:hover {
+  color: #ffff;
+  border-color: var(--color-grey-dark);
+  background-color: var(--color-grey-dark);
+}
+/* ---------------------------
+  START - Loading icon styles
+--------------------------- */
+
+.loading-icon__wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loading-icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid var(--color-kaufland-red);
+  border-radius: 50%;
+  border-top-color: #e9a0a0;
+  -webkit-animation: spin 1s ease-in-out infinite;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+/* ---------------------------
+  END - Loading icon styles
+--------------------------- */
+
+.faq__back-to-top {
+  position: fixed;
+  inset-block-end: 0;
+  inset-inline-end: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-kaufland-red);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-block: var(--spacing-lg);
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 999;
+}
+
+/* -----------------------
+ BACK TO TOP ARROW STYLES
+  ---------------------- */
+
+.faq__back-to-top-arrow {
+  display: inline-block;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-block-start: var(--spacing-xs);
+  border-top: 5px solid #ffff;
+  border-right: 5px solid #ffff;
+}
+
+/* ----------------
+  MEDIA QUERRIES
+----------------- */
+
+@media only screen and (min-width: 62em) {
+  .faq__heading-container {
+    margin-block-end: var(--spacing-xl);
+  }
+
+  .kaufland-ecommerce-logo-wrapper {
+    height: 100px;
+  }
+
+  .faq__back-to-top {
+    inset-block-end: 1.5rem;
+    inset-inline-end: 1.5rem;
+  }
+}

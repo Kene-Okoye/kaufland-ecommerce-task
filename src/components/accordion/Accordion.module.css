@@ -1,0 +1,90 @@
+details {
+  text-align: start;
+  margin-block-end: var(--spacing-sm);
+}
+
+summary::first-letter,
+.accordion__text::first-letter {
+  text-transform: uppercase;
+}
+
+summary {
+  display: block;
+  position: relative;
+  padding: var(--spacing-lg);
+  padding-inline-end: 4rem;
+  background-color: var(--color-grey-light);
+  font-weight: var(--font-weight-semi-bold);
+  font-size: 1.4rem;
+
+  cursor: pointer;
+  list-style: none;
+}
+
+/* -----------------------------------
+    ACCORDION ARROW STYLES
+  ------------------------------------ */
+summary::before {
+  content: '';
+  position: absolute;
+  inset-block-start: 1.5rem;
+  inset-inline-end: 2rem;
+
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-block-start: 12px;
+  border-top: 2px solid var(--color-grey-dark);
+  border-right: 2px solid var(--color-grey-dark);
+
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+
+  transition: all 0.3s;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion__text-wrapper {
+  padding: var(--spacing-lg);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.8s ease;
+}
+
+.accordion__text {
+  font-size: var(--font-size-xs);
+}
+
+/* -----------------------------------
+    ACCORDION (DETAILS) STYLES WHEN OPEN
+  ------------------------------------ */
+.accordion[open] > summary {
+  border-block-end: none;
+}
+
+.accordion[open] > summary::before {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+
+  margin-block-start: 21px;
+}
+
+.accordion[open] > .accordion__text-wrapper {
+  max-height: 50rem;
+}
+
+/* ----------------
+    MEDIA QUERRIES
+  ----------------- */
+
+@media only screen and (min-width: 62em) {
+  .accordion__text {
+    font-size: var(--font-size-sm);
+  }
+}
