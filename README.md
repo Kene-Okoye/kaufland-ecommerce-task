@@ -38,7 +38,7 @@ A working version of the project can be viewed [here](https://kene-okoye.github.
 
 ### Built With
 
-This project is built with [![React][React.js]][React-url] + [![TypeScript][TypeScript]][TypeScript-url] + [![Vite]][Vite-url]
+This project is built with [![React][React.js]][React-url] + [![TypeScript][TypeScript]][TypeScript-url] + [![Vite][Vite]][Vite-url]
 
 
 <!-- GETTING STARTED -->
