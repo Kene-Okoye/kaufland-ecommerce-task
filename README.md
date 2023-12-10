@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to my FAQ Sample Task 👋🏿</h1>
+<h1 align="center">Welcome to my FAQ Sample Task 😊</h1>
 
 <!-- TABLE OF CONTENTS -->
 <details>
