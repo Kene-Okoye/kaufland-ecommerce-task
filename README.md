@@ -32,7 +32,7 @@ The project displays a list of questions and corresponding answers. The question
 
 
 ## Demo
-A working version of the project can be viewed [here](https://kene-okoye.github.io/kaufland-ecommerce-task/)_
+A working version of the project can be viewed [here](https://kene-okoye.github.io/kaufland-ecommerce-task/)
 
 
 
@@ -64,7 +64,7 @@ To run locally use:
    ```sh
    npm run dev
    ```
-Or you can also expose the network to view on your mobile or other newtork connected devices using:
+You can also expose the network to view on your mobile or other network-connected devices using the:
    ```sh
    npm run dev -- --host
    ```
@@ -101,4 +101,4 @@ Run the following to view the test coverage
 
 
 [Vite]: https://vitejs.dev/
-[Vite]: https://img.shields.io/badge/Vite-646CFF.svg?style=for-the-badge&logo=Vite&logoColor=white
+[Vite-url]: https://img.shields.io/badge/Vite-646CFF.svg?style=for-the-badge&logo=Vite&logoColor=white
