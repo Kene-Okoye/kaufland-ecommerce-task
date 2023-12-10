@@ -99,6 +99,5 @@ Run the following to view the test coverage
 [TypeScript]: https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white
 [TypeScript-url]: https://www.typescriptlang.org/
 
-
-[Vite]: https://vitejs.dev/
-[Vite-url]: https://img.shields.io/badge/Vite-646CFF.svg?style=for-the-badge&logo=Vite&logoColor=white
+[Vite]: https://img.shields.io/badge/Vite-646CFF.svg?style=for-the-badge&logo=Vite&logoColor=white
+[Vite-url]: https://vitejs.dev/ 
